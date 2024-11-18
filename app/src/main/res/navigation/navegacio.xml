@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navegacio"
+    app:startDestination="@id/primerFragment">
+
+    <fragment
+        android:id="@+id/primerFragment"
+        android:name="com.enaitzdam.explicacio_fragments.PrimerFragment"
+        android:label="PrimerFragment" >
+        <action
+            android:id="@+id/action_primerFragment_to_finalFragment"
+            app:destination="@id/finalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="com.enaitzdam.explicacio_fragments.FinalFragment"
+        android:label="FinalFragment" />
+</navigation>
